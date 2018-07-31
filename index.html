@@ -3,15 +3,46 @@
  <head> 
  <meta charset="utf-8">
 <title>WebChat</title>
+  <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
 </head>
  <body style="background-color: gray;">
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
   <center>
-   <h1>WebChat</h1><br>
+   <h1>WebChat</h1>
    Simply . Easy . Enjoy . Access<br>
    <iframe src="https://webchat.quakenet.org/?channels=WebChat" width="900" height="700"></iframe>
   </center>
-  <h2> News </h2>
-  <br>Welcome to Webchat that uses free Node make sure you sign and login to talk<br>
+  <h2 id="news"> News </h2>
+  Welcome to Webchat that uses free Node make sure you sign and login to talk<br>
   report any bug at the github <a href="https://github.com/Overload02/WebChat/issues"> Issues Page </a>
  </body> 
 </html>
